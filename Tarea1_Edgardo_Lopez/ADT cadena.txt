@@ -1,0 +1,34 @@
+public interface Cadena { //una cadena de caracteres basada en una lista
+  //mide el tamaño de la cadena
+  public int longitud(); 
+
+  // limpia la lista completamente
+  public void limpiar();
+
+  // concatena una cadena a otra cadena
+  public String[] concatenar(Cadena otra);
+
+  //
+  public String[] subcadena(int inicio, int fin);
+
+  // comparar una cadena con otra
+  public int comparar(Cadena otra);
+
+  // busca un caracter en la cadea
+  public int buscar(char c);
+
+  // Intercambiar un caracter por otro
+  public boolean reemplazar(char viejo, char nuevo);
+
+  //Dividir la cadena en subcadenas
+  public String[] dividir(chat delimitador);
+
+  //Volver en mayusculas
+  public boolean mayusculas(char cambiar);
+
+  //Volver en minusculas
+  public boolean minusculas(char cambiar);
+
+  // Revisar que la cadena este vacia
+  public boolean etsaVacia();
+}

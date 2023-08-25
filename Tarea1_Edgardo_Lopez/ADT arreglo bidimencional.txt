@@ -1,0 +1,45 @@
+public interface Matriz {//ADT para un arreglo bidimencional
+
+    //Obtener el valor en cierta posicion
+    public int obtener(int fila, int columna);
+
+    //Inserta un valor en el arreglo bidimencional
+    public void insertar(int fila, int columna, int valor);
+
+    //Establece las filas
+    public int filas();
+
+    //Establece las columnas
+    public int columnas();
+
+    //Elimina todos los elementos del arreglo
+    public void vaciar();
+
+    //Elimina un valor del arreglo
+    public int remover(int fila, int columna);
+
+    //Movernos al comienzo
+    public void moverAlComienzo();
+
+    //Movernos al final
+    public void moverAlFinal();
+
+    //Movernos hacia otra columna
+    public void moverColumna(int columna);
+
+    //Movernos hacia una fila diferente
+    public void moverFila(int fila);
+
+    //Obtener el valor
+    public int ObtenerValor();
+
+    //Revisar que el arreglo este vacio
+    public boolean estaVacio();
+
+}
+
+
+/* En el caso de tener un Arreglo de 1000 x 1000 seria realizar un algoritmo que detecte las posiciones mas cercanas al comienzo eh inserte ahi los elementos, tanto 
+en las filas como en las columnas
+
+luego para recorrerlo, un algoritmo que detecte hasta donde una fila tiene un elemento igual a 0, al igual que en las columnas, delimitando asi el moverse en las posiciones que tengan valores iguales a 0*/
